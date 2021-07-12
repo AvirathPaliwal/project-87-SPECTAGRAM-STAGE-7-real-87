@@ -91,7 +91,7 @@ export default class Profile extends Component {
                 style={styles.iconImage}></Image>
             </View>
             <View style={styles.appTitleTextContainer}>
-              <Text style={this.state.light_Theme?styles/appTitleTextLight:styles.appTitleText}>
+              <Text style={this.state.light_Theme?styles.appTitleTextLight:styles.appTitleText}>
                 SPECTAGRAM
                 </Text>
                 </View>
