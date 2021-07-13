@@ -33,7 +33,7 @@ export default class Profile extends Component {
     this.state = {
       fontsLoaded: false,
       isEnabled : false,
-      light_Theme : true,
+      light_theme : true,
       profile_image: '',
       name: '' 
     };
