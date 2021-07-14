@@ -9,6 +9,7 @@ import {
   Image,
   ScrollView,
   TextInput,
+  Button
 } from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
 //import { ScrollView } from 'react-native-gesture-handler'
@@ -50,6 +51,10 @@ export default class CreatePost extends Component{
         theme = snapshot.val().current_theme
         this.setState({ light_theme: theme==="light"  })
       })
+  }
+
+  async addStory(){
+    
   }
   
   render() {
@@ -158,6 +163,12 @@ export default class CreatePost extends Component{
                 numberOfLines={4}
               />
             </ScrollView>
+            <View style={styles.sumbitButton}><Button
+             title='Sumbit'
+              color='black' 
+              onPress={()=>{
+                this.addStory();
+              }}/></View>
 
           </View>
 
@@ -248,4 +259,9 @@ const styles = StyleSheet.create({
     textAlignVertical: 'top',
     padding: RFValue(5),
   },
+  sumbitButton:{
+    alignSelf:'center',
+    justifyContent:'center',
+    marginTop:RFValue(20)
+  }
 });
