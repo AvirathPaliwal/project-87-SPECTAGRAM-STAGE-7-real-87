@@ -18,6 +18,7 @@ import Pick from "./Pick";
 
 import AppLoading from "expo-app-loading";
 import * as Font from "expo-font";
+import firebase from 'firebase';
 import { color } from "react-native-reanimated";
 //import { FlatList } from "react-native-gesture-handler";
 
