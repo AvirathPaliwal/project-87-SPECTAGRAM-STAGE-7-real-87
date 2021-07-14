@@ -182,6 +182,12 @@ const styles = StyleSheet.create({
     fontFamily: 'Bubblegum-Sans',
     marginTop: RFValue(10),
   },
+  nameTextLight: {
+    color: 'black',
+    fontSize: RFValue(40),
+    fontFamily: 'Bubblegum-Sans',
+    marginTop: RFValue(10),
+  },
   themesContainer: {
     flex: 0.2,
     flexDirection: 'row',
