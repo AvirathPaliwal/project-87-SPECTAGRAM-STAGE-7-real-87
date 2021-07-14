@@ -14,6 +14,7 @@ import { RFValue } from "react-native-responsive-fontsize";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import AppLoading from "expo-app-loading";
 import * as Font from "expo-font";
+import firebase from 'firebase';
 
 
 let customFonts = {
@@ -134,23 +135,23 @@ const styles = StyleSheet.create({
        AuthorText: {
         fontSize: RFValue(18),
         fontFamily: "Bubblegum-Sans",
-        color: "black"
+        color: "white"
     },
       AuthorTextLight:{
         fontSize: RFValue(18),
         fontFamily: "Bubblegum-Sans",
-        color: "white"
+        color: "black"
       },
     captionText: {
         fontFamily: "Bubblegum-Sans",
         fontSize: 13,
-        color: "black",
+        color: "white",
         paddingTop: RFValue(10)
     },
-    captionText: {
+    captionTextLight: {
         fontFamily: "Bubblegum-Sans",
         fontSize: 13,
-        color: "white",
+        color: "black",
         paddingTop: RFValue(10)
     },
     actionContainer: {
@@ -173,7 +174,7 @@ const styles = StyleSheet.create({
         fontSize: RFValue(25),
         marginLeft: RFValue(5)
     },
-    likeText: {
+    likeTextLight: {
         color: "black",
         fontFamily: "Bubblegum-Sans",
         fontSize: RFValue(25),
